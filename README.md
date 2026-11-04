@@ -1,0 +1,51 @@
+# Measure It — Segmentation and Metric Measurement
+
+A computer vision project for card segmentation and approximate dimensional measurement using camera calibration and Mask R-CNN.
+
+## Project Structure
+
+- docs/ — Project documentation and reports.
+- dataset/splits/split.csv — Fixed 70/20/10 dataset split.
+- artifacts/calibration/ — Camera calibration parameters.
+- artifacts/models/ — Trained model checkpoint.
+- artifacts/ — Evaluation and measurement results.
+- inference/ — Image inference script.
+
+## Model
+
+Fine-tuned torchvision Mask R-CNN ResNet50-FPN.
+Training used 100 card images with SAM 2.1-generated pseudo-labels.
+
+## Installation
+
+Run: pip install -r requirements.txt
+
+## Run Inference
+
+python inference/measure.py --image path/to/image.jpg --reference-width-mm 85.60 --reference-width-px PIXELS
+
+The reference width in pixels must be measured manually from the same undistorted image.
+
+
+## Model Weights
+
+Checkpoint: `artifacts/models/best_maskrcnn.pth`
+
+File size: 168.06 MB
+
+SHA-256:
+`172e56ce0c269dc8128e4e676cf4da58caa6169b3367952350080194af0231ca`
+
+The checkpoint is not committed directly to Git because of its size.
+
+## Limitations
+
+Reference-object detection is manual, not automatic. Independent calliper validation has not been completed. Segmentation metrics are evaluated against SAM pseudo-labels, not independently verified ground truth.
+
+
+## Download Model Weights
+
+Download the trained checkpoint from:
+https://github.com/Kas-hish22/measure-it-segmentation/releases/tag/v1.0.0
+
+Verify the downloaded file using the SHA-256 hash documented above.

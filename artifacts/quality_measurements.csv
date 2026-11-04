@@ -1,0 +1,2 @@
+image,long_side_pixels,short_side_pixels,aspect_ratio,nominal_width_mm,nominal_height_mm,ratio_error_percent,estimated_width_mm,estimated_height_mm
+card_052.png,1842.76,1162.21,1.5856,85.6,53.98,0.010878504672904838,85.6,53.98704985999262
