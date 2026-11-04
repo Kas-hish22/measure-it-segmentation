@@ -41,3 +41,11 @@ The checkpoint is not committed directly to Git because of its size.
 ## Limitations
 
 Reference-object detection is manual, not automatic. Independent calliper validation has not been completed. Segmentation metrics are evaluated against SAM pseudo-labels, not independently verified ground truth.
+
+
+## Download Model Weights
+
+Download the trained checkpoint from:
+https://github.com/Kas-hish22/measure-it-segmentation/releases/tag/v1.0.0
+
+Verify the downloaded file using the SHA-256 hash documented above.
