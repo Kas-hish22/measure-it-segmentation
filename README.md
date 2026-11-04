@@ -26,6 +26,18 @@ python inference/measure.py --image path/to/image.jpg --reference-width-mm 85.60
 
 The reference width in pixels must be measured manually from the same undistorted image.
 
+
+## Model Weights
+
+Checkpoint: `artifacts/models/best_maskrcnn.pth`
+
+File size: 168.06 MB
+
+SHA-256:
+`172e56ce0c269dc8128e4e676cf4da58caa6169b3367952350080194af0231ca`
+
+The checkpoint is not committed directly to Git because of its size.
+
 ## Limitations
 
 Reference-object detection is manual, not automatic. Independent calliper validation has not been completed. Segmentation metrics are evaluated against SAM pseudo-labels, not independently verified ground truth.
