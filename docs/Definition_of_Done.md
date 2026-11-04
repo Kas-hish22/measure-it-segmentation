@@ -1,0 +1,22 @@
+# Definition of Done
+
+- [ ] At least 20 calibration images captured.
+- [ ] Camera matrix and distortion coefficients saved.
+- [ ] Reprojection error calculated and reported.
+- [ ] At least 100 original ATM-card images captured.
+- [ ] All dataset images labelled with segmentation masks.
+- [ ] Fixed 70/20/10 split committed before training.
+- [ ] Mask R-CNN trained using training data only.
+- [ ] Test metrics reported: IoU, mAP@0.5, mAP@0.5:0.95, precision and recall.
+- [ ] One-command inference produces mask overlay and dimensions in mm.
+- [ ] Missing object and missing reference cases handled.
+- [ ] At least 10 instances measured against ruler/calliper.
+- [ ] Mean, median and worst-case measurement errors reported.
+- [ ] Raw and undistorted image errors compared.
+- [ ] One speed or accuracy objective measured.
+- [ ] One failure condition investigated, if time permits.
+- [ ] Confidence-based refusal behaviour tested, if time permits.
+- [ ] README and all three required documents completed.
+- [ ] Git history shows progressive, meaningful commits.
+- [ ] Loom recording is no longer than 5 minutes.
+- [ ] All unfinished work and limitations disclosed.
