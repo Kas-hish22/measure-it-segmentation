@@ -1,0 +1,9 @@
+
+# Private dataset and model files
+card_images.zip
+dataset/images/
+dataset/processed_images/
+dataset/masks/
+artifacts/models/
+sam2.1_b.pt
+__pycache__/
